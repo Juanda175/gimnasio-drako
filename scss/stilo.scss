@@ -1,0 +1,133 @@
+@import "headers";
+@import "content";
+@import "footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #525252;
+$second-color: black;
+$third-color: #be2630af;
+$letras-second: #313131;
+
+$ancho: 1400px;
+$alto: 1200px;
+
+
+
+@font-face {
+    font-family: halo;
+    src: url(./font/Halo.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1{
+      font-family: halo;
+      background-color: $third-color;
+      font-style: oblique;
+  }
+
+  h2{
+      font-family: halo;
+      color: $second-color ;
+      background:linear-gradient(0deg, rgba(99,175,106,1) 87%, rgba(108,161,115,0.9951330874146533) 100%);
+      padding: 1%;
+      margin: 2%;
+  }
+
+
+
+
+
+
+//PAGINA CURSOS
+
+.curso__videos{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20%;
+    
+    h2{
+        
+        width: 100%;
+        height: 5%;
+        text-align: start;
+        margin: 10px 0 10px 0;
+    
+        }
+        
+        .curso__videos--item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+                video{
+                    width: $ancho/2;
+                    height: $alto/3;
+                    margin: 10px;
+                }
+            
+}
+    
+    
+    }
+
+    .imgcurso{
+        
+        width: 100%; 
+             
+        
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    
+            .card{
+            width: 100%;
+            height: 800px;
+
+                .card-img-top{
+                    width: 50%;
+                    align-self: center;
+                    padding: 20px 0 20px 0;
+                }
+
+            }
+
+        }
+    
+
+
+
+.intercalado__colores{
+    font-size: 1.5em;
+    padding: $alto/80;
+    margin: 5% 0 5% 0;
+    text-align::justify;
+    border-top: solid 5px $primary-color;
+    border-bottom: solid 5px $primary-color;
+}
+
+
+
+    @mixin colores(){
+        @for $i from 1 through 6 {
+            @if ($i % 2 == 1) {
+                .linea-#{$i} {
+                    background-color: rgb(70, 165, 75);
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    *{@include colores();}

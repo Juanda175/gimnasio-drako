@@ -1,0 +1,40 @@
+$primary-color: #525252;
+$second-color: black;
+$third-color: #CA3E47;
+$letras-second: #313131;
+
+$ancho: 1400px;
+$alto: 1200px;
+
+
+.container__footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top:solid 5px $third-color;
+
+    ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        
+    }
+
+    li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    
+    }
+
+    a{
+        color:$letras-second;
+        text-decoration: none;
+    }
+
+    img{
+        width: 10%;
+    }
+
+}

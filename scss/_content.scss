@@ -1,0 +1,148 @@
+$ancho: 1400px;
+$alto: 1200px;
+
+//variables
+$primary-color: #525252;
+$second-color: black;
+$third-color: #CA3E47;
+$letras-second: #313131;
+
+
+.container {
+    width: 100%;
+
+
+    .container__imagenes {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2% 0 2% 2%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+
+    }
+
+    .container__imagenes--item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2% 0 2%;
+        border-right: solid 5px rgb(101, 110, 107);
+        font-family: halo;
+        font-size: 1em;
+    }
+
+    .container__main {
+        width: 100%;
+        height: 400px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .container__info {
+        padding: 5% 0 2% 0;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+
+        h2 {
+
+            background: $primary-color;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        span {
+            text-align: justify;
+            text-justify: distribute;
+            
+            
+        }
+
+        .col-lg-4 {
+            border-left: solid 5px green;
+            border-right: solid 5px green;
+            padding: 2%;
+
+        }
+    }
+
+    .container__carousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(172, 255, 47, 0.432);
+        width: 100%;
+        // height: 300px;
+        margin-bottom: 10%;
+
+        .container__carousel--slide {
+            width: 50%;
+            height: 100%;
+        }
+
+    }
+
+//PAGINA CONTACTO
+
+.Contacto__container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    
+    h2{
+        width:100%; 
+       
+        padding: 1%;
+        margin: 2%;
+    }
+
+    label{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .Contacto__container--form input {
+        width: 100%;
+        padding: 1%;
+        margin: 2%;
+    
+}
+
+      .Contacto__container--form select {
+        width: 100%;
+        margin: 3%;
+        padding: 1%;
+      }
+      
+      .Contacto__container--form select:hover {
+        color: rgb(0, 255, 42);
+        background-color: rgba(7, 7, 7, 0.568);
+      }
+      
+      #radiop {
+        margin: 8% 0 8% 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        color: black;
+        font-size: 1em;
+      }
+    
+
+}
+
+
+}

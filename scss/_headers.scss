@@ -1,0 +1,44 @@
+
+
+$primary-color: #525252;
+$second-color: black;
+$third-color: #CA3E47;
+$letras-second: #313131;
+
+$ancho: 1400px;
+$alto: 1200px;
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    background-color:$primary-color;
+    width: 100%;
+    
+    h2{
+        color:$letras-second;
+        padding-left: 5%;
+    }
+
+    img{
+        width: 300px;
+        cursor: pointer;
+        transition: transform 2s;
+        
+    }
+    img:hover{
+        transform: scale(1.2, 1.2);
+    }
+    
+    .container-fluid{
+        font-family: halo;
+        font-size: 1.5em;
+        background: $primary-color;
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        color: #FFFFFF;
+        background: $primary-color;
+    }
+}
