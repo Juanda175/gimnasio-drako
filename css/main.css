@@ -139,7 +139,7 @@ header {
 
 h1 {
   font-family: halo;
-  background-color: #be2630af;
+  border-bottom: 5px solid #be2630af;
   font-style: oblique; }
 
 h2 {
