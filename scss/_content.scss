@@ -41,6 +41,7 @@ $letras-second: #313131;
             width: 100%;
             height: 100%;
         }
+        
     }
 
     .container__info {
@@ -78,10 +79,11 @@ $letras-second: #313131;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: rgba(172, 255, 47, 0.432);
+        // background-color: rgba(172, 255, 47, 0.432);
         width: 100%;
         // height: 300px;
         margin-bottom: 10%;
+        margin-top: 10%;
 
         .container__carousel--slide {
             width: 50%;
@@ -145,4 +147,11 @@ $letras-second: #313131;
 }
 
 
+}
+
+// PAGINA RUTINAS 
+
+.table{
+    margin-top: 5%;
+    border: solid 5px green;
 }
