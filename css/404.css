@@ -1,0 +1,45 @@
+.imagen404{
+    
+    background-image:url(../source/img/splash.png);
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;  
+    width: 100%;
+    height: 78vh;
+    animation: movimiento 10s infinite;
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position-x: center;
+}
+
+@keyframes movimiento {
+    from{
+        background-position-y: -500px;
+    }to{
+        background-position-y: 100px;
+    }
+    
+}
+
+.info__error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    color:white;
+    background: rgb(55,56,62);
+background: linear-gradient(90deg, rgba(55,56,62,1) 30%, rgba(55,56,62,1) 41%,
+ rgba(120,122,134,1) 53%, rgba(28,29,32,1) 58%, rgba(41,42,46,1) 58%, rgba(0,0,0,1) 60%,
+  rgba(39,40,44,1) 64%, rgba(35,36,39,1) 67%, rgba(33,34,37,1) 71%, rgba(45,46,51,1) 79%, rgba(18,19,21,1) 83%);
+
+}
+
+.info__error a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-size: 2em;
+}
